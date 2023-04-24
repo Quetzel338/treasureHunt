@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+
+h1{
+    font-size: 5em;
+    color: aliceblue;
+}
+#btn{
+    padding: 20px 30px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#btn:hover {
+    background-color: #3e8e41
+}
+
+#btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#div{
+    border-radius: 10%;
+    padding-top: 10%;
+}

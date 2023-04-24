@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    font-family: 'open sans', sans-serif;
+}
+
+.waviy {
+position: relative;
+-webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+font-size: 80px;
+padding-left: 30%;
+padding-top: 20%;
+}
+
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #df5a0d;
+    text-transform: uppercase;
+    animation: waviy 2s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+    transform: translateY(0)
+}
+20% {
+    transform: translateY(-20px)
+}
+}
+
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+ 

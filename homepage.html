@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Treasure Hunt Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="login.html">Login</a>
+        <a href="#about">About</a>
+      </div>
+
+
+    <div class="waviy">
+        <span style="--i:1">T</span>
+        <span style="--i:2">R</span>
+        <span style="--i:3">E</span>
+        <span style="--i:4">A</span>
+        <span style="--i:5">S</span>
+        <span style="--i:6">U</span>
+        <span style="--i:7">R</span>
+        <span style="--i:8">E</span>
+        <span style="--i:9"> </span>
+        <span style="--i:10">H</span>
+        <span style="--i:11">U</span>
+        <span style="--i:12">N</span>
+        <span style="--i:13">T</span>
+       </div>
+
+       
+
+    <script>
+        // Add interactive animation using JavaScript
+        const title = document.querySelector(".title");
+        title.addEventListener("mouseover", function() {
+            title.style.animationPlayState = "paused";
+        });
+        title.addEventListener("mouseout", function() {
+            title.style.animationPlayState = "running";
+        });
+    </script>
+</body>
+</html>

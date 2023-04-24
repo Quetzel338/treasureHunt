@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+        background-image: url("ClueImages/1820.jpg");
+        background-color: #cccccc;
+        }
+
+        #p1,#p2{
+            font-size: 5em;
+            text-align: center;
+            color: black;
+
+        }
+        #btn1{
+            border-radius: 4px;
+            background-color: hsla(14, 90%, 23%, 0.808);
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin-left: 20px;
+            }
+
+        #btn1::after{
+            background-color: transparent;
+        }
+
+        #btn1:hover span {
+            padding-right: 25px;
+        }
+
+        #div1{
+            padding-left: 45%;
+            padding-top: 5%;
+        }
+
+        #div{
+            padding-left: 45%;
+            padding-top: 10%;
+        }
+        input[type=text] {
+        background: transparent;
+        border: none;
+        border-bottom: 5px solid #000000;
+        padding: 2px 5px;
+        width: 30%;
+        font-size: 2em;
+    }
+    #btn2{
+        font-size: 2em;
+        background-color: transparent;
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <p id="p1"><p>
+    <script>
+        function hint1(){
+            document.getElementById("p1").innerHTML = " In my reflection,You’ll see your complexion.";
+        }
+
+        function ans(){
+            var x
+            x = document.getElementById("numb").value;
+            if(x == "Mirror" || x == "mirror"){
+                window.location.href="page2.html";
+
+            }
+            else{
+                // alert("incorrect")
+                document.getElementById("numb").style.borderBlockColor="red";
+            }
+        }
+    </script>
+    <div id="div">
+        <input type= "text" id="numb">
+        <input type="button" id="btn2" value="submit" placeholder="submit" onclick="ans()">
+    </div>
+
+    <div id="div1">
+        <button type="button" onclick="hint1()" id ="btn1" > Hint</button>
+    </div>  
+</body>
+</html>
